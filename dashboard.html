@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Egg Incubator Monitoring</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header>
+    <h1>🥚 Egg Incubator Monitoring System</h1>
+    <p>Real-time Temperature & Humidity Monitoring</p>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <h2>🌡 Temperature</h2>
+      <p id="temp">Loading...</p>
+    </div>
+
+    <div class="card">
+      <h2>💧 Humidity</h2>
+      <p id="hum">Loading...</p>
+    </div>
+  </section>
+
+  <section class="graph">
+    <h2>📈 ThingSpeak Graph</h2>
+
+    <!-- Temperature Graph -->
+    <iframe
+      src="https://thingspeak.com/channels/3200960/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true"
+      width="450"
+      height="260"
+      frameborder="0">
+    </iframe>
+
+    <!-- Humidity Graph -->
+    <iframe
+      src="https://thingspeak.com/channels/3200960/charts/2?bgcolor=%23ffffff&color=%2300aaff&dynamic=true"
+      width="450"
+      height="260"
+      frameborder="0">
+    </iframe>
+  </section>
+  
+  <div class="back-button-area">
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

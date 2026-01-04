@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitoring Egg Incubator System</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: hsl(0, 0%, 100%);
+      color: #000000;
+    }
+
+    /* ===== TOP FACULTY BAR ===== */
+    .faculty-bar {
+      background-color: #1f3347;
+      color: #fff;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* CENTER EVERYTHING */
+      gap: 24px;
+    }
+
+    .faculty-bar img {
+      height: 60px;
+    }
+
+    .faculty-text h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .faculty-text p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .main-content {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .sulam-title {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      margin-bottom: 30px;
+    }
+
+    /* ===== PURPOSE BOX ===== */
+    .purpose-box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      text-align: left;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .purpose-box h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .purpose-box p {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    /* ===== BUTTON ===== */
+    .button-area {
+      text-align: right;
+    }
+
+    .btn {
+      background-color: #2f80ed;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1c63c7;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .faculty-bar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .button-area {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP FACULTY HEADER -->
+  <div class="faculty-bar">
+    <img src="umpsa.png" alt="UMPSA Logo" />
+
+    <div class="faculty-text">
+      <h2>FACULTY OF ELECTRICAL & ELECTRONIC ENGINEERING TECHNOLOGY</h2>
+      <p>BACHELOR OF INDUSTRIAL ELECTRONIC AUTOMATION TECHNOLOGY WITH HONOURS</p>
+    </div>
+
+    <img src="sulam.png" alt="SULAM Logo" />
+  </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <div class="sulam-title">SULAM: INCUBATOR EGG IN KOLEJ VOKASIONAL CHENOR</div>
+
+    <img src="incubator.jpg" alt="Egg Incubator" class="project-image" />
+
+    <div class="purpose-box">
+      <h3>Project Purpose</h3>
+      <p>
+        The purpose of an egg incubator is to provide a controlled environment with
+        suitable temperature and humidity for proper egg development and hatching.
+      </p>
+      <p>
+        By integrating a monitoring and alert system, the incubator can detect
+        unsuitable conditions and notify users to take immediate action. This helps
+        improve egg care, reduce failure rates, and increase hatching success while
+        minimizing constant manual checking.
+      </p>
+    </div>
+
+    <div class="button-area">
+      <a href="dashboard.html" class="btn">Current Status</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
