@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alerting System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      background: #f4f7fb;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .alert-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .alert-box {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .alert-box h1 {
+      margin-top: 0;
+      color: #e74c3c;
+      font-size: 30px;
+    }
+
+    .alert-box p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+
+    .telegram-section {
+      margin-top: 30px;
+    }
+
+    .telegram-logo {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    .qr-code {
+      width: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .back-button-area {
+      margin-top: 40px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background-color: #2c7be5;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #1a5fd0;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="alert-container">
+    <div class="alert-box">
+
+      <h1>Alerting System</h1>
+
+      <p>
+        The alerting system is designed to notify users immediately when the
+        temperature or humidity inside the egg incubator is outside the suitable range.
+      </p>
+
+      <p>
+        Notifications will be sent automatically through <strong>Telegram</strong>
+        to ensure fast response and continuous monitoring.
+      </p>
+
+      <div class="telegram-section">
+        <img src="telegram-logo.png" alt="Telegram Logo" class="telegram-logo">
+
+        <p><strong>Scan the QR code below to receive alerts:</strong></p>
+
+        <img src="telegram-qr.png" alt="Telegram QR Code" class="qr-code">
+
+        <p class="note">
+          Scan using your phone camera or Telegram app to connect with the alert system.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="back-button-area">
+      <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
